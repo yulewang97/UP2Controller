@@ -1,0 +1,37 @@
+﻿  FPGAController.cpp
+c1xx : warning C4199: C++/CLI、C++/CX 或 OpenMP 不支持两阶段名称查找；请使用 /Zc:twoPhase-
+  PCIE.cpp
+c1xx : warning C4199: C++/CLI、C++/CX 或 OpenMP 不支持两阶段名称查找；请使用 /Zc:twoPhase-
+  SafeEyeMain.cpp
+c1xx : warning C4199: C++/CLI、C++/CX 或 OpenMP 不支持两阶段名称查找；请使用 /Zc:twoPhase-
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(229): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(291): warning C4244: “=”: 从“double”转换到“unsigned int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(293): warning C4244: “=”: 从“double”转换到“unsigned int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(301): warning C4244: “=”: 从“double”转换到“unsigned int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(303): warning C4244: “=”: 从“double”转换到“unsigned int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(381): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(646): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(231): warning C4101: “sdata”: 未引用的局部变量
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(283): warning C4101: “turned2”: 未引用的局部变量
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(283): warning C4101: “turned1”: 未引用的局部变量
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(333): warning C4101: “opt”: 未引用的局部变量
+  正在生成代码...
+c:\opencv\build\include\opencv2\core\cvstd.hpp(575): warning C4793: “cv::String::String”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\mat.inl.hpp(482): warning C4793: “cv::Mat::Mat”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\mat.inl.hpp(803): warning C4793: “cv::Mat::release”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\mat.inl.hpp(2118): warning C4793: “cv::SparseMat::addref”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\mat.inl.hpp(3718): warning C4793: “cv::UMat::addref”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\ptr.inl.hpp(67): warning C4793: “cv::detail::PtrOwner::incRef”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\ptr.inl.hpp(72): warning C4793: “cv::detail::PtrOwner::decRef”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+c1xx : warning C4199: C++/CLI、C++/CX 或 OpenMP 不支持两阶段名称查找；请使用 /Zc:twoPhase-
+SafeEyeMain.obj : error LNK2028: 无法解析的标记(0A00076B) "public: virtual bool __cdecl cv::VideoCapture::retrieve(class cv::debug_build_guard::_OutputArray const &,int)" (?retrieve@VideoCapture@cv@@$$FUEAA_NAEBV_OutputArray@debug_build_guard@2@H@Z)，该标记在函数 "unsigned long __cdecl readFrame(void *)" (?readFrame@@$$FYAKPEAX@Z) 中被引用
+SafeEyeMain.obj : error LNK2019: 无法解析的外部符号 "public: virtual bool __cdecl cv::VideoCapture::retrieve(class cv::debug_build_guard::_OutputArray const &,int)" (?retrieve@VideoCapture@cv@@$$FUEAA_NAEBV_OutputArray@debug_build_guard@2@H@Z)，该符号在函数 "unsigned long __cdecl readFrame(void *)" (?readFrame@@$$FYAKPEAX@Z) 中被引用
+C:\IntelProject\UPSquared\UP2Controller\x64\Debug\UP2Controller.exe : fatal error LNK1120: 2 个无法解析的外部命令

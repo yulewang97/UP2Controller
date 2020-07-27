@@ -1,0 +1,28 @@
+﻿  SafeEyeMain.cpp
+c1xx : warning C4199: C++/CLI、C++/CX 或 OpenMP 不支持两阶段名称查找；请使用 /Zc:twoPhase-
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(222): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(289): warning C4244: “=”: 从“double”转换到“unsigned int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(291): warning C4244: “=”: 从“double”转换到“unsigned int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(299): warning C4244: “=”: 从“double”转换到“unsigned int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(301): warning C4244: “=”: 从“double”转换到“unsigned int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(704): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(224): warning C4101: “sdata”: 未引用的局部变量
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(280): warning C4101: “turned2”: 未引用的局部变量
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(280): warning C4101: “turned1”: 未引用的局部变量
+c:\intelproject\upsquared\up2controller\up2controller\safeeyemain.cpp(337): warning C4101: “opt”: 未引用的局部变量
+c:\opencv\build\include\opencv2\core\cvstd.hpp(575): warning C4793: “cv::String::String”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\mat.inl.hpp(482): warning C4793: “cv::Mat::Mat”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\mat.inl.hpp(803): warning C4793: “cv::Mat::release”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\mat.inl.hpp(2118): warning C4793: “cv::SparseMat::addref”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\mat.inl.hpp(3718): warning C4793: “cv::UMat::addref”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\ptr.inl.hpp(67): warning C4793: “cv::detail::PtrOwner::incRef”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+c:\opencv\build\include\opencv2\core\ptr.inl.hpp(72): warning C4793: “cv::detail::PtrOwner::decRef”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+  LINK : 已指定 /LTCG，但不需要生成代码；从链接命令行中移除 /LTCG 以提高链接器性能
+  UP2Controller.vcxproj -> C:\IntelProject\UPSquared\UP2Controller\x64\Release\UP2Controller.exe

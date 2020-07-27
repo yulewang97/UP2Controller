@@ -1,0 +1,330 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Car, Version=1.0.*, Culture=固定语言(固定国家/地区): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Car.ControlUtil: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean LEFT : Public, Static
+    Boolean RIGHT : Public, Static
+    Boolean BACKWARD : Public, Static
+    Boolean FORWARD : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    SetCoefficient(Double, Double): PrivateScope, Public, Static, HideBySig
+    ReadLeftCoefficient(): PrivateScope, Public, Static, HideBySig
+    ReadRightCoefficient(): PrivateScope, Public, Static, HideBySig
+    ReadDistanceBetween(): PrivateScope, Public, Static, HideBySig
+    ReadInc(Double&(Out), Double&(Out)): PrivateScope, Public, Static, HideBySig
+    Command(UInt32, Byte[]): PrivateScope, Public, Static, HideBySig
+    SetAcceleration(Double): PrivateScope, Public, Static, HideBySig
+    GoStraight(Double): PrivateScope, Public, Static, HideBySig
+    GoStraight(Double, Double): PrivateScope, Public, Static, HideBySig
+    Turn(Double, Double): PrivateScope, Public, Static, HideBySig
+    Rotate(Double, Boolean, Double): PrivateScope, Public, Static, HideBySig
+    Stop(): PrivateScope, Public, Static, HideBySig
+    SlowStop(): PrivateScope, Public, Static, HideBySig
+    Reset(): PrivateScope, Public, Static, HideBySig
+Struct Car.TPCANStatus: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    Car.TPCANStatus PCAN_ERROR_OK = 0 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_XMTFULL = 1 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_OVERRUN = 2 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_BUSLIGHT = 4 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_BUSHEAVY = 8 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_BUSWARNING = 8 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_BUSPASSIVE = 262144 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_BUSOFF = 16 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_ANYBUSERR = 262172 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_QRCVEMPTY = 32 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_QOVERRUN = 64 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_QXMTFULL = 128 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_REGTEST = 256 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_NODRIVER = 512 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_HWINUSE = 1024 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_NETINUSE = 2048 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_ILLHW = 5120 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_ILLNET = 6144 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_ILLCLIENT = 7168 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_ILLHANDLE = 7168 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_RESOURCE = 8192 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_ILLPARAMTYPE = 16384 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_ILLPARAMVAL = 32768 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_UNKNOWN = 65536 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_ILLDATA = 131072 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_CAUTION = 33554432 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_INITIALIZE = 67108864 : Public, Static, Literal, HasDefault
+    Car.TPCANStatus PCAN_ERROR_ILLOPERATION = 134217728 : Public, Static, Literal, HasDefault
+Struct Car.TPCANDevice: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Byte value__ : Public, SpecialName, RTSpecialName
+    Car.TPCANDevice PCAN_NONE = 0 : Public, Static, Literal, HasDefault
+    Car.TPCANDevice PCAN_PEAKCAN = 1 : Public, Static, Literal, HasDefault
+    Car.TPCANDevice PCAN_ISA = 2 : Public, Static, Literal, HasDefault
+    Car.TPCANDevice PCAN_DNG = 3 : Public, Static, Literal, HasDefault
+    Car.TPCANDevice PCAN_PCI = 4 : Public, Static, Literal, HasDefault
+    Car.TPCANDevice PCAN_USB = 5 : Public, Static, Literal, HasDefault
+    Car.TPCANDevice PCAN_PCC = 6 : Public, Static, Literal, HasDefault
+    Car.TPCANDevice PCAN_VIRTUAL = 7 : Public, Static, Literal, HasDefault
+    Car.TPCANDevice PCAN_LAN = 8 : Public, Static, Literal, HasDefault
+Struct Car.TPCANParameter: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Byte value__ : Public, SpecialName, RTSpecialName
+    Car.TPCANParameter PCAN_DEVICE_NUMBER = 1 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_5VOLTS_POWER = 2 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_RECEIVE_EVENT = 3 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_MESSAGE_FILTER = 4 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_API_VERSION = 5 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_CHANNEL_VERSION = 6 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_BUSOFF_AUTORESET = 7 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_LISTEN_ONLY = 8 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_LOG_LOCATION = 9 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_LOG_STATUS = 10 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_LOG_CONFIGURE = 11 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_LOG_TEXT = 12 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_CHANNEL_CONDITION = 13 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_HARDWARE_NAME = 14 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_RECEIVE_STATUS = 15 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_CONTROLLER_NUMBER = 16 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_TRACE_LOCATION = 17 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_TRACE_STATUS = 18 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_TRACE_SIZE = 19 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_TRACE_CONFIGURE = 20 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_CHANNEL_IDENTIFYING = 21 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_CHANNEL_FEATURES = 22 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_BITRATE_ADAPTING = 23 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_BITRATE_INFO = 24 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_BITRATE_INFO_FD = 25 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_BUSSPEED_NOMINAL = 26 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_BUSSPEED_DATA = 27 : Public, Static, Literal, HasDefault
+    Car.TPCANParameter PCAN_IP_ADDRESS = 28 : Public, Static, Literal, HasDefault
+Struct Car.TPCANMessageType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Byte value__ : Public, SpecialName, RTSpecialName
+    Car.TPCANMessageType PCAN_MESSAGE_STANDARD = 0 : Public, Static, Literal, HasDefault
+    Car.TPCANMessageType PCAN_MESSAGE_RTR = 1 : Public, Static, Literal, HasDefault
+    Car.TPCANMessageType PCAN_MESSAGE_EXTENDED = 2 : Public, Static, Literal, HasDefault
+    Car.TPCANMessageType PCAN_MESSAGE_FD = 4 : Public, Static, Literal, HasDefault
+    Car.TPCANMessageType PCAN_MESSAGE_BRS = 8 : Public, Static, Literal, HasDefault
+    Car.TPCANMessageType PCAN_MESSAGE_ESI = 16 : Public, Static, Literal, HasDefault
+    Car.TPCANMessageType PCAN_MESSAGE_STATUS = 128 : Public, Static, Literal, HasDefault
+Struct Car.TPCANMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Byte value__ : Public, SpecialName, RTSpecialName
+    Car.TPCANMode PCAN_MODE_STANDARD = 0 : Public, Static, Literal, HasDefault
+    Car.TPCANMode PCAN_MODE_EXTENDED = 2 : Public, Static, Literal, HasDefault
+Struct Car.TPCANBaudrate: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Car.TPCANBaudrate PCAN_BAUD_1M = 20 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_800K = 22 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_500K = 28 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_250K = 284 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_125K = 796 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_100K = 17199 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_95K = 49998 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_83K = 34091 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_50K = 18223 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_47K = 5140 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_33K = 35631 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_20K = 21295 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_10K = 26415 : Public, Static, Literal, HasDefault
+    Car.TPCANBaudrate PCAN_BAUD_5K = 32639 : Public, Static, Literal, HasDefault
+Struct Car.TPCANType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Byte value__ : Public, SpecialName, RTSpecialName
+    Car.TPCANType PCAN_TYPE_ISA = 1 : Public, Static, Literal, HasDefault
+    Car.TPCANType PCAN_TYPE_ISA_SJA = 9 : Public, Static, Literal, HasDefault
+    Car.TPCANType PCAN_TYPE_ISA_PHYTEC = 4 : Public, Static, Literal, HasDefault
+    Car.TPCANType PCAN_TYPE_DNG = 2 : Public, Static, Literal, HasDefault
+    Car.TPCANType PCAN_TYPE_DNG_EPP = 3 : Public, Static, Literal, HasDefault
+    Car.TPCANType PCAN_TYPE_DNG_SJA = 5 : Public, Static, Literal, HasDefault
+    Car.TPCANType PCAN_TYPE_DNG_SJA_EPP = 6 : Public, Static, Literal, HasDefault
+Struct Car.TPCANMsg: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 ID : Public
+    Car.TPCANMessageType MSGTYPE : Public, HasFieldMarshal
+    Byte LEN : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Struct Car.TPCANTimestamp: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 millis : Public
+    UInt16 millis_overflow : Public
+    UInt16 micros : Public
+Struct Car.TPCANMsgFD: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 ID : Public
+    Car.TPCANMessageType MSGTYPE : Public, HasFieldMarshal
+    Byte DLC : Public
+    Byte[] DATA : Public, HasFieldMarshal
+Class Car.PCANBasic: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    UInt16 PCAN_NONEBUS = 0 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_ISABUS1 = 33 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_ISABUS2 = 34 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_ISABUS3 = 35 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_ISABUS4 = 36 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_ISABUS5 = 37 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_ISABUS6 = 38 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_ISABUS7 = 39 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_ISABUS8 = 40 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_DNGBUS1 = 49 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS1 = 65 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS2 = 66 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS3 = 67 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS4 = 68 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS5 = 69 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS6 = 70 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS7 = 71 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS8 = 72 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS9 = 1033 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS10 = 1034 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS11 = 1035 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS12 = 1036 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS13 = 1037 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS14 = 1038 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS15 = 1039 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCIBUS16 = 1040 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS1 = 81 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS2 = 82 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS3 = 83 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS4 = 84 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS5 = 85 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS6 = 86 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS7 = 87 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS8 = 88 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS9 = 1289 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS10 = 1290 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS11 = 1291 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS12 = 1292 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS13 = 1293 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS14 = 1294 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS15 = 1295 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_USBBUS16 = 1296 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCCBUS1 = 97 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_PCCBUS2 = 98 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS1 = 2049 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS2 = 2050 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS3 = 2051 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS4 = 2052 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS5 = 2053 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS6 = 2054 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS7 = 2055 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS8 = 2056 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS9 = 2057 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS10 = 2058 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS11 = 2059 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS12 = 2060 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS13 = 2061 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS14 = 2062 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS15 = 2063 : Public, Static, Literal, HasDefault
+    UInt16 PCAN_LANBUS16 = 2064 : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_CLOCK = f_clock : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_CLOCK_MHZ = f_clock_mhz : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_NOM_BRP = nom_brp : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_NOM_TSEG1 = nom_tseg1 : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_NOM_TSEG2 = nom_tseg2 : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_NOM_SJW = nom_sjw : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_NOM_SAMPLE = nom_sam : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_DATA_BRP = data_brp : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_DATA_TSEG1 = data_tseg1 : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_DATA_TSEG2 = data_tseg2 : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_DATA_SJW = data_sjw : Public, Static, Literal, HasDefault
+    System.String PCAN_BR_DATA_SAMPLE = data_ssp_offset : Public, Static, Literal, HasDefault
+    Int32 PCAN_PARAMETER_OFF = 0 : Public, Static, Literal, HasDefault
+    Int32 PCAN_PARAMETER_ON = 1 : Public, Static, Literal, HasDefault
+    Int32 PCAN_FILTER_CLOSE = 0 : Public, Static, Literal, HasDefault
+    Int32 PCAN_FILTER_OPEN = 1 : Public, Static, Literal, HasDefault
+    Int32 PCAN_FILTER_CUSTOM = 2 : Public, Static, Literal, HasDefault
+    Int32 PCAN_CHANNEL_UNAVAILABLE = 0 : Public, Static, Literal, HasDefault
+    Int32 PCAN_CHANNEL_AVAILABLE = 1 : Public, Static, Literal, HasDefault
+    Int32 PCAN_CHANNEL_OCCUPIED = 2 : Public, Static, Literal, HasDefault
+    Int32 PCAN_CHANNEL_PCANVIEW = 3 : Public, Static, Literal, HasDefault
+    Int32 LOG_FUNCTION_DEFAULT = 0 : Public, Static, Literal, HasDefault
+    Int32 LOG_FUNCTION_ENTRY = 1 : Public, Static, Literal, HasDefault
+    Int32 LOG_FUNCTION_PARAMETERS = 2 : Public, Static, Literal, HasDefault
+    Int32 LOG_FUNCTION_LEAVE = 4 : Public, Static, Literal, HasDefault
+    Int32 LOG_FUNCTION_WRITE = 8 : Public, Static, Literal, HasDefault
+    Int32 LOG_FUNCTION_READ = 16 : Public, Static, Literal, HasDefault
+    Int32 LOG_FUNCTION_ALL = 65535 : Public, Static, Literal, HasDefault
+    Int32 TRACE_FILE_SINGLE = 0 : Public, Static, Literal, HasDefault
+    Int32 TRACE_FILE_SEGMENTED = 1 : Public, Static, Literal, HasDefault
+    Int32 TRACE_FILE_DATE = 2 : Public, Static, Literal, HasDefault
+    Int32 TRACE_FILE_TIME = 4 : Public, Static, Literal, HasDefault
+    Int32 TRACE_FILE_OVERWRITE = 128 : Public, Static, Literal, HasDefault
+    Int32 FEATURE_FD_CAPABLE = 1 : Public, Static, Literal, HasDefault
+  Methods:
+    Initialize(UInt16(HasFieldMarshal), TPCANBaudrate(HasFieldMarshal), TPCANType(HasFieldMarshal), UInt32, UInt16): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Initialize(UInt16, TPCANBaudrate): PrivateScope, Public, Static, HideBySig
+    InitializeFD(UInt16(HasFieldMarshal), String): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Uninitialize(UInt16(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Reset(UInt16(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetStatus(UInt16(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(UInt16(HasFieldMarshal), TPCANMsg&(Out), TPCANTimestamp&(Out)): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Read(UInt16, TPCANMsg&(Out)): PrivateScope, Public, Static, HideBySig
+    ReadFD(UInt16(HasFieldMarshal), TPCANMsgFD&(Out), UInt64&(Out)): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReadFD(UInt16, TPCANMsgFD&(Out)): PrivateScope, Public, Static, HideBySig
+    Write(UInt16(HasFieldMarshal), TPCANMsg&): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    WriteFD(UInt16(HasFieldMarshal), TPCANMsgFD&): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    FilterMessages(UInt16(HasFieldMarshal), UInt32, UInt32, TPCANMode(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetValue(UInt16(HasFieldMarshal), TPCANParameter(HasFieldMarshal), StringBuilder, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetValue(UInt16(HasFieldMarshal), TPCANParameter(HasFieldMarshal), UInt32&(Out), UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetValue(UInt16(HasFieldMarshal), TPCANParameter(HasFieldMarshal), UInt32&, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SetValue(UInt16(HasFieldMarshal), TPCANParameter(HasFieldMarshal), String(HasFieldMarshal), UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetErrorText(TPCANStatus(HasFieldMarshal), UInt16, StringBuilder): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Car.PcanControl: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 Mode1 : Public
+    Int32 Mode2 : Public
+    Int32 Mode3 : Public
+    Double SlowDown : Public
+    UInt32 leftWheelID : Public
+    UInt32 rightWheelID : Public
+    Double leftCoefficient : Public, Static
+    Double rightCoefficient : Public, Static
+    Double perimeter : Public, Static
+    Double distanceBetween : Public, Static
+  Methods:
+    Command(UInt32, Byte[]): PrivateScope, Public, HideBySig
+    SetMode(Int32): PrivateScope, Public, HideBySig
+    Start(): PrivateScope, Public, HideBySig
+    Stop(): PrivateScope, Public, HideBySig
+    SetSpeed(Double, Double): PrivateScope, Public, HideBySig
+    SetMaxSpeed(Double, Double): PrivateScope, Public, HideBySig
+    SetAcceleratedSpeed(Double, Double): PrivateScope, Public, HideBySig
+    SetDeceleratedSpeed(Double, Double): PrivateScope, Public, HideBySig
+    SetTargetInc(Int32, Int32): PrivateScope, Public, HideBySig
+    Reset(): PrivateScope, Public, HideBySig
+    ReadMode(UInt32, Int32&(Out)): PrivateScope, Public, HideBySig
+    ReadAmpere(UInt32, Double&(Out)): PrivateScope, Public, HideBySig
+    ReadInc(UInt32, Int32&(Out)): PrivateScope, Public, HideBySig
+    ReadSpeed(UInt32, Double&(Out)): PrivateScope, Public, HideBySig
+    ReadAcceleratedSpeed(UInt32, Double&(Out)): PrivateScope, Public, HideBySig
+    ReadDeceleratedSpeed(UInt32, Double&(Out)): PrivateScope, Public, HideBySig
+    ReadTargetInc(UInt32, Int32&(Out)): PrivateScope, Public, HideBySig
+    ReadMaximumSpeed(UInt32, Double&(Out)): PrivateScope, Public, HideBySig
+Class Car.coordinate: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Double speed_cmps : Public, Static
+    Double speed_w : Public, Static
+  Methods:
+    update(String): PrivateScope, Public, HideBySig
+    GetState(): PrivateScope, Public, HideBySig
+    getHeadPos(): PrivateScope, Public, HideBySig
+    getMidPos(): PrivateScope, Public, HideBySig
