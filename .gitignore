@@ -1,0 +1,51 @@
+# --------------------------
+# Build directories
+# --------------------------
+[Bb]uild*/
+x64/
+Debug/
+Release/
+*.log
+
+# --------------------------
+# Visual Studio files
+# --------------------------
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.sdf
+
+
+# --------------------------
+# Compiled binaries and intermediate files
+# --------------------------
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.idb
+
+# --------------------------
+# Temporary or backup files
+# --------------------------
+*.tmp
+*.bak
+*.old
+*~
+*.aps
+
+# --------------------------
+# CMake (if used later)
+# --------------------------
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# --------------------------
+# Ignore output directory (if added)
+# --------------------------
+output/
+bin/
